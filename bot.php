@@ -1,6 +1,6 @@
 <?
 function webhook($method, $params){
-    $queryUrl = 'https://stazhirovka24.bitrix24.ru/rest/1/lku60ih8tb3mw9u6/'.$method.'.json';
+    $queryUrl = 'https://stazhirovka24.bitrix24.ru/rest/1/21kem2bx9wmk4i12/'.$method.'.json';
     $queryData = http_build_query($params);
     $curl = curl_init();
     curl_setopt_array($curl, array(
@@ -17,7 +17,7 @@ function webhook($method, $params){
     return $result ;
 }
 function executeHook($params) {
-    $queryUrl = 'https://stazhirovka24.bitrix24.ru/rest/1/lku60ih8tb3mw9u6/batch.json';
+    $queryUrl = 'https://stazhirovka24.bitrix24.ru/rest/1/21kem2bx9wmk4i12/batch.json';
     $queryData = http_build_query($params);
   
     $curl = curl_init();
